@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>COTIZADOR FINANCIERO</title>
+        <title>FINANCIAL QUOTER</title>
         <style>
             .field_personalizado-descuento,.field_personalizado-enganche,.table_personalizado-entrega,.field_personalizado-parcial1-perc,.field_personalizado-entrega-perc{
                 width: calc(100% - 18px) !important;
@@ -909,7 +909,7 @@
         <script>
             var language="ES";
             let usd_price = 18.5;
-            var global_currency="MXN";//USD
+            var global_currency="USD";//USD
             var units_arr=[];
             var sel_index=0;
 
@@ -929,8 +929,10 @@
                 $('.unidad-selector').change();
             });
 
+
             $('.translate-btn').on('click',function(e){
                 e.preventDefault();
+                console.log('sss');
                 if(language=="ES"){
                     language="EN";
                     $('.translatable').each(function(){
@@ -948,6 +950,8 @@
                 }
                 $(this).text(language);
             });
+
+            $('.translate-btn').click();
 
             const sheetId = '1Xvi1GtNckzVeEsgx3DT_LucpzVLWOz627DtSXdNptHM';
             const sheetName = 'costos';
