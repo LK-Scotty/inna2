@@ -85,11 +85,20 @@
                 margin-top: 3px;
                 margin-right: 4px;
             }
+            .btn-goback {
+                color: white;
+                background-color: #005649;
+                text-decoration: none;
+                padding: 4px 10px;
+                border-radius: 8px;
+                font-family: sans-serif;
+            }
         </style>
     </head>
     <body>
-        <div class="sh_section">
-            <h2 class="sh_header"><span class="translatable" data-en="FINANCIAL QUOTER">COTIZADOR FINANCIERO</span> <a href="#" class="change-currency">MXN</a> <a href="#" class="translate-btn">ES</a></h2>
+        <a href="#" class="translatable btn-goback" data-en="Go Back">Volver</a>
+        <div class="sh_section" style="margin-top: 10px;">
+            <h2 class="sh_header"><span class="translatable" data-en="FINANCIAL QUOTER">COTIZADOR FINANCIERO</span> <a href="#" class="change-currency">USD</a> <a href="#" class="translate-btn">ES</a></h2>
             <div class="first_form">
                 <div class="sh_fields">
                     <label class="translatable" data-en="Client's Name">Nombre del Cliente</label>
@@ -912,6 +921,11 @@
             var global_currency="USD";//USD
             var units_arr=[];
             var sel_index=0;
+
+            $('.btn-goback').on('click',function(e){
+                e.preventDefault();
+                window.location.href="https://test13.memoral.com.mx/menu/";
+            });
 
             $('.change-currency').on('click',function(e){
                 e.preventDefault();
