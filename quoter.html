@@ -93,6 +93,12 @@
                 border-radius: 8px;
                 font-family: sans-serif;
             }
+            .esquemas-table{
+                display: none;
+            }
+            .esquemas-table:nth-child(1){
+                display: initial;
+            }
         </style>
     </head>
     <body>
@@ -139,7 +145,16 @@
             </table>
         </div>
 
-        <h2 class="sh_divider-title translatable" data-en="INVESTMENT PLANS">ESQUEMAS DE INVERSIÓN</h2>
+        <h2 class="sh_divider-title"><span class="translatable" data-en="INVESTMENT PLANS">ESQUEMAS DE INVERSIÓN</span> 
+            <select class="scheme-selector">
+                <option value="0"><span class="translatable" data-en="ALL CASH">CONTADO</span></option>
+                <option value="1"><span class="translatable" data-en="PLAN I">ESQUEMA I</span></option>
+                <option value="2"><span class="translatable" data-en="PLAN II">ESQUEMA II</span></option>
+                <option value="3"><span class="translatable" data-en="PLAN III">ESQUEMA III</span></option>
+                <option value="4"><span class="translatable" data-en="PLAN IV">ESQUEMA IV</span></option>
+                <option value="5"><span class="translatable" data-en="CUSTOM">PERSONALIZADO</span></option>
+            </select>
+        </h2>
 
         <div class="sh_section" style="border: none;width:164%">
              <div class="esquemas-table">
@@ -182,7 +197,7 @@
 
                 <h2 class="sh_divider-title translatable" data-en="ALL CASH">CONTADO</h2>
                 <h3><text class="translatable" data-en="SALE PRICE">PRECIO DE VENTA</text> <span class="table_contado-final"></span></h3>
-                <table class="financial-cums">
+                               <table class="financial-cums">
                     <thead>
                         <tr>
                             <th class="translatable" data-en="MONTHLY PAYMENT">MENSUALIDAD</th>
@@ -244,6 +259,31 @@
                         <tr>
                             <td class="translatable" data-en="MONTH 10">MES 10</td>
                             <td class="cum_contado-mes10"></td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 11">MES 11</td>
+                            <td class="cum_contado-mes11"></td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 12">MES 12</td>
+                            <td class="cum_contado-mes12"></td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 13">MES 13</td>
+                            <td class="cum_contado-mes13"></td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 14">MES 14</td>
+                            <td class="cum_contado-mes14"></td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 15">MES 15</td>
+                            <td class="cum_contado-mes15"></td>
                             <td>10%</td>
                         </tr>
                         <tr>
@@ -372,6 +412,31 @@
                         <tr>
                             <td class="translatable" data-en="MONTH 10">MES 10</td>
                             <td class="cum_plan1-mes10"></td>
+                            <td>3.8%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 11">MES 11</td>
+                            <td class="cum_plan1-mes11"></td>
+                            <td>3.8%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 12">MES 12</td>
+                            <td class="cum_plan1-mes12"></td>
+                            <td>3.8%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 13">MES 13</td>
+                            <td class="cum_plan1-mes13"></td>
+                            <td>3.8%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 14">MES 14</td>
+                            <td class="cum_plan1-mes14"></td>
+                            <td>3.8%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 15">MES 15</td>
+                            <td class="cum_plan1-mes15"></td>
                             <td>20%</td>
                         </tr>
                         <tr>
@@ -499,6 +564,31 @@
                         <tr>
                             <td class="translatable" data-en="MONTH 10">MES 10</td>
                             <td class="cum_plan2-mes10"></td>
+                            <td>4.4%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 11">MES 11</td>
+                            <td class="cum_plan2-mes11"></td>
+                            <td>4.4%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 12">MES 12</td>
+                            <td class="cum_plan2-mes12"></td>
+                            <td>4.4%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 13">MES 13</td>
+                            <td class="cum_plan2-mes13"></td>
+                            <td>4.4%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 14">MES 14</td>
+                            <td class="cum_plan2-mes9"></td>
+                            <td>4.4%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 15">MES 15</td>
+                            <td class="cum_plan2-mes15"></td>
                             <td>35%</td>
                         </tr>
                         <tr>
@@ -626,6 +716,31 @@
                         <tr>
                             <td class="translatable" data-en="MONTH 10">MES 10</td>
                             <td class="cum_plan3-mes10"></td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 11">MES 11</td>
+                            <td class="cum_plan3-mes11"></td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 12">MES 12</td>
+                            <td class="cum_plan3-mes12"></td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 13">MES 13</td>
+                            <td class="cum_plan3-mes13"></td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 14">MES 14</td>
+                            <td class="cum_plan3-mes14"></td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 15">MES 15</td>
+                            <td class="cum_plan3-mes15"></td>
                             <td>50%</td>
                         </tr>
                         <tr>
@@ -753,6 +868,31 @@
                         <tr>
                             <td class="translatable" data-en="MONTH 10">MES 10</td>
                             <td class="cum_plan4-mes10"></td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 11">MES 11</td>
+                            <td class="cum_plan4-mes11"></td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 12">MES 12</td>
+                            <td class="cum_plan4-mes12"></td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 13">MES 13</td>
+                            <td class="cum_plan4-mes13"></td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 14">MES 14</td>
+                            <td class="cum_plan4-mes14"></td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 15">MES 15</td>
+                            <td class="cum_plan4-mes15"></td>
                             <td>70%</td>
                         </tr>
                         <tr>
@@ -878,6 +1018,31 @@
                             <td><input class="cum_personalizado-perc10"></td>
                         </tr>
                         <tr>
+                            <td class="translatable" data-en="MONTH 11">MES 11</td>
+                            <td class="cum_personalizado-mes11"></td>
+                            <td><input class="cum_personalizado-perc11"></td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 12">MES 12</td>
+                            <td class="cum_personalizado-mes12"></td>
+                            <td><input class="cum_personalizado-perc12"></td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 13">MES 13</td>
+                            <td class="cum_personalizado-mes13"></td>
+                            <td><input class="cum_personalizado-perc13"></td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 14">MES 14</td>
+                            <td class="cum_personalizado-mes14"></td>
+                            <td><input class="cum_personalizado-perc14"></td>
+                        </tr>
+                        <tr>
+                            <td class="translatable" data-en="MONTH 15">MES 15</td>
+                            <td class="cum_personalizado-mes15"></td>
+                            <td><input class="cum_personalizado-perc15"></td>
+                        </tr>
+                         <tr>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
@@ -921,6 +1086,12 @@
             var global_currency="USD";//USD
             var units_arr=[];
             var sel_index=0;
+
+            $('.scheme-selector').on('change',function(){
+                const whicho=parseInt($(this).val());
+                $('.esquemas-table').hide();
+                $('.esquemas-table').eq(whicho).show();
+            });
 
             $('.btn-goback').on('click',function(e){
                 e.preventDefault();
@@ -1042,6 +1213,11 @@
                 $('.cum_personalizado-mes8').text(formatMXN(totale*($('.cum_personalizado-perc8').val()/100)));
                 $('.cum_personalizado-mes9').text(formatMXN(totale*($('.cum_personalizado-perc9').val()/100)));
                 $('.cum_personalizado-mes10').text(formatMXN(totale*($('.cum_personalizado-perc10').val()/100)));
+                $('.cum_personalizado-mes11').text(formatMXN(totale*($('.cum_personalizado-perc11').val()/100)));
+                $('.cum_personalizado-mes12').text(formatMXN(totale*($('.cum_personalizado-perc12').val()/100)));
+                $('.cum_personalizado-mes13').text(formatMXN(totale*($('.cum_personalizado-perc13').val()/100)));
+                $('.cum_personalizado-mes14').text(formatMXN(totale*($('.cum_personalizado-perc14').val()/100)));
+                $('.cum_personalizado-mes15').text(formatMXN(totale*($('.cum_personalizado-perc15').val()/100)));
 
             }
 
@@ -1097,7 +1273,12 @@
                 $('.cum_contado-mes7').text(formatMXN(0));
                 $('.cum_contado-mes8').text(formatMXN(0));
                 $('.cum_contado-mes9').text(formatMXN(0));
-                $('.cum_contado-mes10').text(formatMXN(totale*0.1));
+                $('.cum_contado-mes10').text(formatMXN(0));
+                $('.cum_contado-mes11').text(formatMXN(0));
+                $('.cum_contado-mes12').text(formatMXN(0));
+                $('.cum_contado-mes13').text(formatMXN(0));
+                $('.cum_contado-mes14').text(formatMXN(0));
+                $('.cum_contado-mes15').text(formatMXN(totale*0.1));
 
                 $('.cum_plan1-mes1').text(formatMXN(totale*0.5));
                 $('.cum_plan1-mes2').text(formatMXN(totale*0.038));
@@ -1108,7 +1289,12 @@
                 $('.cum_plan1-mes7').text(formatMXN(totale*0.038));
                 $('.cum_plan1-mes8').text(formatMXN(totale*0.038));
                 $('.cum_plan1-mes9').text(formatMXN(totale*0.038));
-                $('.cum_plan1-mes10').text(formatMXN(totale*0.2));
+                $('.cum_plan1-mes10').text(formatMXN(totale*0.038));
+                $('.cum_plan1-mes11').text(formatMXN(totale*0.038));
+                $('.cum_plan1-mes12').text(formatMXN(totale*0.038));
+                $('.cum_plan1-mes13').text(formatMXN(totale*0.038));
+                $('.cum_plan1-mes14').text(formatMXN(totale*0.038));
+                $('.cum_plan1-mes15').text(formatMXN(totale*0.2));
 
                 $('.cum_plan2-mes1').text(formatMXN(totale*0.3));
                 $('.cum_plan2-mes2').text(formatMXN(totale*0.044));
@@ -1119,7 +1305,12 @@
                 $('.cum_plan2-mes7').text(formatMXN(totale*0.044));
                 $('.cum_plan2-mes8').text(formatMXN(totale*0.044));
                 $('.cum_plan2-mes9').text(formatMXN(totale*0.044));
-                $('.cum_plan2-mes10').text(formatMXN(totale*0.35));
+                $('.cum_plan2-mes10').text(formatMXN(totale*0.044));
+                $('.cum_plan2-mes11').text(formatMXN(totale*0.044));
+                $('.cum_plan2-mes12').text(formatMXN(totale*0.044));
+                $('.cum_plan2-mes13').text(formatMXN(totale*0.044));
+                $('.cum_plan2-mes14').text(formatMXN(totale*0.044));
+                $('.cum_plan2-mes15').text(formatMXN(totale*0.35));
 
                 $('.cum_plan3-mes1').text(formatMXN(totale*0.5));
                 $('.cum_plan3-mes2').text(formatMXN(0));
@@ -1130,7 +1321,12 @@
                 $('.cum_plan3-mes7').text(formatMXN(0));
                 $('.cum_plan3-mes8').text(formatMXN(0));
                 $('.cum_plan3-mes9').text(formatMXN(0));
-                $('.cum_plan3-mes10').text(formatMXN(totale*0.5));
+                $('.cum_plan3-mes10').text(formatMXN(0));
+                $('.cum_plan3-mes11').text(formatMXN(0));
+                $('.cum_plan3-mes12').text(formatMXN(0));
+                $('.cum_plan3-mes13').text(formatMXN(0));
+                $('.cum_plan3-mes14').text(formatMXN(0));
+                $('.cum_plan3-mes15').text(formatMXN(totale*0.5));
 
                 $('.cum_plan4-mes1').text(formatMXN(totale*0.3));
                 $('.cum_plan4-mes2').text(formatMXN(0));
@@ -1141,7 +1337,12 @@
                 $('.cum_plan4-mes7').text(formatMXN(0));
                 $('.cum_plan4-mes8').text(formatMXN(0));
                 $('.cum_plan4-mes9').text(formatMXN(0));
-                $('.cum_plan4-mes10').text(formatMXN(totale*0.7));
+                $('.cum_plan4-mes10').text(formatMXN(0));
+                $('.cum_plan4-mes11').text(formatMXN(0));
+                $('.cum_plan4-mes12').text(formatMXN(0));
+                $('.cum_plan4-mes13').text(formatMXN(0));
+                $('.cum_plan4-mes14').text(formatMXN(0));
+                $('.cum_plan4-mes15').text(formatMXN(totale*0.7));
             }
         </script>
     </body>
