@@ -974,6 +974,13 @@
             var units_arr=[];
             var sel_index=0;
 
+                    $('.translatable').each(function(){
+                        if(!$(this).attr('data-es')){
+                            $(this).attr('data-es',$(this).text());
+                        }
+                        $(this).text($(this).attr('data-en'));
+                    });
+
             $('.scheme-selector').on('change',function(){
                 const whicho=parseInt($(this).val());
                 $('.esquemas-table').hide();
