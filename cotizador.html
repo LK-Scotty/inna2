@@ -2,6 +2,15 @@
     <head>
         <title>COTIZADOR FINANCIERO</title>
         <style>
+            #btn-check-custom{
+                color: white;
+                background-color: #005649;
+                text-decoration: none;
+                padding: 4px 10px;
+                border-radius: 8px;
+                font-family: sans-serif;
+                cursor: pointer;
+            }
             .field_personalizado-descuento,.field_personalizado-enganche,.table_personalizado-entrega,.field_personalizado-parcial1-perc,.field_personalizado-entrega-perc{
                 width: calc(100% - 18px) !important;
             }
@@ -982,6 +991,11 @@
                     </tr>
                     <tr>
                         <td colspan="3" style="text-align:center;padding:4px;">
+                            <button class="translatable" id="btn-check-custom" data-en="CHECK">CHECAR</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="text-align:center;padding:4px;">
                             <small id="personalizado-perc-aviso" style="color:#c00;font-weight:bold;"></small>
                         </td>
                     </tr>
@@ -1212,10 +1226,37 @@
             });
 
             // Para los demás campos, solo recalcular
-            $(document).on('change keyup',
+            /*$(document).on('change keyup',
                 '.field_personalizado-descuento, .field_personalizado-enganche, .field_personalizado-parcial1-perc, .field_personalizado-entrega-perc',
                 function(){ fillCustom(); }
-            );
+            );*/
+
+            $('#btn-check-custom').on('click',function(){
+                const input_classes=[
+                    '.field_personalizado-descuento',
+                    '.field_personalizado-enganche',
+                    '.field_personalizado-parcial1-perc',
+                    '.field_personalizado-mensualidades',
+                    '.field_personalizado-mens-perc',
+                    '.field_personalizado-entrega-perc'
+                ];
+                var passed=1;
+                for(var i=0;i<input_classes.length;i++){
+                    if(!$(input_classes[i]).val()){
+                        passed=0;
+                        $(input_classes[i]).css({'border-color':'red'});
+                    }
+                    else{
+                        $(input_classes[i]).css({'border-color':'black'});
+                    }
+                }
+                if(passed){
+                    fillCustom();
+                }
+                else{
+                    $('#personalizado-perc-aviso').text('⚠ Todos los campos son obligatorios');
+                }
+            });
 
             function fillData(indexo){
                 var totale;
